@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .carousel-item img {
+            object-fit: cover;
+            height: 500px;
+        }
+        .card-img-top:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+        .carousel-caption h1,
+    .carousel-caption p {
+        color:rgb(234, 163, 22); /* Set the desired color for the text */
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info text-white">
+        <a class="navbar-brand" href="#">Delicious Delights</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#offer">Special Offer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#specials">Today`s Specails</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#order">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#headerCarousel" data-slide-to="1"></li>
+                <li data-target="#headerCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="restaurent1.webp" class="d-block w-100" alt="Restaurant 1">
+                    <div class="carousel-caption">
+                        <h1 class="text-warning">Welcome to Delicious Delights</h1>
+                        <p class="text-primary">Experience the finest dining with our exquisite menu.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="restaurent2.jpeg" class="d-block w-100" alt="Restaurant 2">
+                    <div class="carousel-caption">
+                        <h1 class="text-warning">Discover New Culinary Delights</h1>
+                        <p class="text-light">Indulge in a world of flavors and gastronomic experiences.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="restaurant3.jpg" class="d-block w-100" alt="Restaurant 3">
+                    <div class="carousel-caption">
+                        <h1>A Memorable Dining Experience</h1>
+                        <p class="text-light">Savor the perfect blend of taste, ambiance, and exceptional service.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    
+    
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">About Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                  
+            <p>
+                <h3>SERVED EVERY DAY SINCE 1990</h3>
+                Located in the heart of Gachibowli, our restaurant combines the rich flavors of traditional and contemporary cuisine with warm hospitality, making it the perfect place to indulge in a culinary journey. Whether you're looking for a casual lunch, a romantic dinner, or a venue to celebrate a special occasion, we have you covered
+                 
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="about-us.jpg" class="img-fluid" alt="About Photo">
+            </div>
+            </div>
+         </div>
+    </section>
+
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Menu</h2>
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                    <div class="card mb-5">
+                        <img src="pizza.jpg" class="card-img-top" alt="Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza</h5>
+                            <p class="card-text">Delicious pizza with various toppings.</p>
+                            <p class="card-text">Price: $12.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mx-auto">
+                    <div class="card mb-5">
+                        <img src="chicken1.jpg" class="card-img-top" alt="biryani">
+                        <div class="card-body">
+                            <h5 class="card-title">Biryani</h5>
+                            <p class="card-text">Special Birayni</p>
+                            <p class="card-text">Price: $20.01</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mx-auto">
+                    <div class="card mb-4">
+                        <img src="sandwich2.jpg" class="card-img-top" alt="Sandwich">
+                        <div class="card-body">
+                            <h5 class="card-title">Sandwich</h5>
+                            <p class="card-text">Sandwich with various toppings.</p>
+                            <p class="card-text">Price: $9.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mx-auto">
+                    <div class="card mb-4">
+                        <img src="pasta.jpg" class="card-img-top" alt="Pasta">
+                        <div class="card-body">
+                            <h5 class="card-title">Pasta</h5>
+                            <p class="card-text">Freshly made pasta with rich sauce.</p>
+                            <p class="card-text">Price: $10.99</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    
+    <div id="offer" class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card text-center py-5">
+                    <h2 class="card-title">Special Offer</h2>
+                    <p class="card-text">Enjoy a complimentary dessert with every main course order.</p>
+                    <a href="#order" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="specials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Today's Specials</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="butter.jpg" class="card-img-top" alt="Butter Chicken">
+                        <div class="card-body">
+                            <h5 class="card-title">Butter Chicken</h5>
+                            <p class="card-text">Tender chicken pieces cooked in a rich, creamy tomato-based gravy with aromatic spices.</p>
+                            <p class="card-text">Price: $12.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="biryani1.jpg" class="card-img-top" alt="Mutton Biryani">
+                        <div class="card-body">
+                            <h5 class="card-title">Mutton Biryani</h5>
+                            <p class="card-text">Fragrant basmati rice cooked with tender mutton pieces and aromatic spices.</p>
+                            <p class="card-text">Price: $16.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="tandoori2.jpg" class="card-img-top" alt="Tandoori Chicken">
+                        <div class="card-body">
+                            <h5 class="card-title">Tandoori Chicken</h5>
+                            <p class="card-text">Chicken marinated in yogurt and a blend of spices, cooked in a traditional tandoor oven.</p>
+                            <p class="card-text">Price: $10.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="chefs" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Chefs</h2>
+            <div id="chefCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#chefCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#chefCarousel" data-slide-to="1"></li>
+                    <li data-target="#chefCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="chef1.jpg" class="d-block w-100" alt="Chef 1">
+                        <div class="carousel-caption">
+                            <h4>Chef 1</h4>
+                            <p>Expert in Italian Cuisine</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="chef2.jpg" class="d-block w-100" alt="Chef 2">
+                        <div class="carousel-caption">
+                            <h4>Chef 2</h4>
+                            <p>Master of Indian Spices</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="chef3.jpg" class="d-block w-100" alt="Chef 3">
+                        <div class="carousel-caption">
+                            <h4>Chef 3</h4>
+                            <p>Creating Delightful Desserts</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#chefCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#chefCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <section id="order" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Place Your Order</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <form>
+                        <div class="form-group">
+                            <label for="dish">Select Dish</label>
+                            <select class="form-control" id="dish" required>
+                                <option value="">Choose a dish</option>
+                                <option value="pizza">Pizza</option>
+                                <option value="biryani">Biryani</option>
+                                <option value="sandwich">Sandwich</option>
+                                <option value="pasta">Pasta</option>
+                                <option value="butterchicken">ButterChicken</option>
+                                <option value="muttonbiryani">MuttonBiryani</option>
+                                <option value="tandoorichicken">TandooriChicken</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" class="form-control" id="quantity" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Comments</label>
+                            <textarea class="form-control" id="message" rows="5"></textarea>
+                        </div>
+                        <button  class="btn btn-primary" onclick="placeOrder()">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card text-center py-5">
+                    <h2 class="card-title">Join our Loyalty Program</h2>
+                    <p class="card-text">Get exclusive discounts, rewards, and special offers as a loyal customer.</p>
+                    <a href="#contact" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="reviews" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Customer Reviews</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text">The food was amazing, and the service was excellent. Highly recommended!</p>
+                            <div class="rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Jane Smith</h5>
+                            <p class="card-text">Great atmosphere and delicious food. Will definitely visit again!</p>
+                            <div class="rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9734;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Mike Johnson</h5>
+                            <p class="card-text">The staff was friendly and attentive. Had an enjoyable dining experience.</p>
+                            <div class="rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9734;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message1" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>Visit Us</h5>
+                    <p> Near Gachibowli Outer Ring Road,<br>Hyderabad, Telangana, 505001</p>
+                    <h5>Contact Information</h5>
+                    <p>Email: info@deliciousdelights.com<br>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-3 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Follow Us On</h4>
+                    <ul class="list-unstyled social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a> Facebook</li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a> Instagram</li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a> Twitter</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Location <i class="fas fa-map-marker-alt"></i> </h4>
+                    <p>Near Gachibowli Outer Ring Road,<br>Hyderabad, Telangana, 505001</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Timings <i class="far fa-clock"></i></h4>
+                    <p>Monday - Friday: 10am - 10pm<br>
+                    Saturday - Sunday: 9am - 11pm</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Reservation</h4>
+                    <p><i class="far fa-envelope"></i> Email: info@deliciousdelights.com<br> <i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>© 2023 Delicious Delights. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        function placeOrder() {
+         var name= document.getElementById("name").value
+          var email=document.getElementById("email").value 
+         var msg= document.getElementById("message").value 
+          var quan=document.getElementById("quantity").value 
+          var dish=document.getElementById("dish").value
+
+          var price = getPriceForDish(dish); // Replace getPriceForDish with your own logic
+      
+          // Calculate the total amount
+          var total = price * quan;
+          function getPriceForDish(dish) {
+          // This is just a placeholder function to retrieve the price for the selected dish
+          // Replace this with your own logic to fetch the price from your data source
+          // You can use an object or an API call to get the price based on the dish value
+          // For simplicity, we'll use a simple lookup object here
+          var dishPrices = {
+            pizza: 12.99,
+            biryani: 20.01,
+            sandwich: 9.99,
+            pasta: 10.99,
+            butterchicken:12.99,
+            muttonbiryani:16.99,
+            tandoorichicken:10.99
+          };
+      
+          return dishPrices[dish] || 0; // Return the price for the selected dish, or 0 if not found
+        }
+
+          // Perform any actions when the order button is clicked
+          // For example, you can display a confirmation message or redirect to a checkout page
+          if (name == "" || email == "" || msg == ""|| quan==""|| dish=="") {
+            alert("Please fill in all fields");
+          }
+          else{
+          alert("Order Placed \n\nName: " + name + "\nEmail: " + email + "\nMessage: " + msg+ "\nDish: " + dish + "\nQuantity: " + quan+"\nTotal Price: $"+total);
+          }
+          document.getElementById("name").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("message").value = ""; 
+          document.getElementById("quantity").value = "";
+          document.getElementById("dish").selectedIndex = 0;
+        }
+      </script>
+      <script>
+        function submitForm() {
+          // Get form values
+          var name = document.getElementById("name1").value;
+          var email = document.getElementById("email1").value;
+          var message = document.getElementById("message1").value;
+      
+          // Perform form validation
+          if (name == "" || email == "" || message == "") {
+            alert("Please fill in all fields");
+          }
+         else{
+           
+          alert("Form submitted\n\nName: " + name + "\nEmail: " + email + "\nMessage: " + message);
+         }
+          document.getElementById("name1").value = "";
+          document.getElementById("email1").value = "";
+          document.getElementById("message1").value = "";
+         
+        }
+      </script>
+      <script>
+        function calculateTotal() {
+          // Get the selected dish and quantity values
+          var dish = document.getElementById("dish").value;
+          var quantity = document.getElementById("quantity").value;
+      
+          // Retrieve the price for the selected dish (you can use a lookup object or fetch it from a database)
+          var price = getPriceForDish(dish); // Replace getPriceForDish with your own logic
+      
+          // Calculate the total amount
+          var total = price * quantity;
+      
+          // Display the total amount
+          document.getElementById("total").textContent = "$" + total.toFixed(2);
+        }
+      
+        
+      </script>
+      
+      
+</body>
+</html>
